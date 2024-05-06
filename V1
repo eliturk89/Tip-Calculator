@@ -1,0 +1,16 @@
+print('Welcome to the tip calculator')
+#bill amount
+b = input('How much was the bill?')
+# tip percentage
+t = input('How much tip would you like to leave? 15, 18, or 20?')
+# number of people
+p = input('How many people are splitting the bill?')
+#type casting
+b = float(b)
+t = float(t)
+p = float(p)
+#calculation
+s = (b/p) * (1 + t/100)
+s = round(s, 2)
+#print result
+print(f'Each of you should pay ${s}')
